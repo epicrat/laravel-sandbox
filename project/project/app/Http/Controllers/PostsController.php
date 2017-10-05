@@ -41,7 +41,7 @@ class PostsController extends Controller
         $post->content = $request->content;
         $post->post_on = $request->post_on;
         $post->save();
-        
+        return view('posts.create');
     }
 
     /**
