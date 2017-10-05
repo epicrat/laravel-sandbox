@@ -11,7 +11,8 @@
             @foreach ($users as $user)
                 <p>{{ $user->id }} <a href="/profile/{{ $user->username }}">{{ $user->username }}</a></p>
             @endforeach
-            {{ $users->links() }} 
+            {{ $users->links() }}
+            
             </div>
         </div>
     </div>

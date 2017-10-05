@@ -7,7 +7,7 @@
             <div class="panel-heading">User: <b>{{ $users->username }}</b></div>
 
             <div class="panel-body">
-                <form class="form-horizontal" method="POST" action="{{ route('register') }}">
+                <form class="form-horizontal" >
                     {{ csrf_field() }}
                     <!-- name -->
                     <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -53,6 +53,7 @@
                     </div>
                 </form>
             </div>
+
         </div>
     </div>
 </div>
